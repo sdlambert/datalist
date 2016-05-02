@@ -1,16 +1,22 @@
 (function (window, document, undefined) {
 	"use strict";
 
-	function init () {
-		var opts = document.getElementById("laptopbrands");
+	function main () {
+		var brands = document.getElementById("laptopBrands"),
+		    other = document.getElementById("other");
 
-		opts.addEventListener('change', checkForOther, false);
+		brands.addEventListener("change", function () {
+			if (brands.selectedIndex === brands.options.length - 1 &&
+						other.classList.contains("hidden")) {
+				other.classList.remove("hidden");
+			}
+			else if (!other.classList.contains("hidden")) {
+				other.classList.add("hidden");
+				other.value = "";
+			}
+		}, false);
 	}
 
-	function checkForOther (e) {
-
-	}
-
-	window.addEventListener('load', init, false);
+	window.addEventListener("load", main, false);
 
 })(window, document);

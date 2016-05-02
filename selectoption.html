@@ -3,22 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Select Options</title>
+		<style type="text/css">
+			.hidden {
+				display: none;
+			}
+		</style>
 	</head>
 	<body>
-		<select size="1" name="laptopbrands" id="laptopbrands">
-			<option value="Acer">Acer</option>
-			<option value="Apple">Apple</option>
-			<option value="Asus">Asus</option>
-			<option value="Dell">Dell</option>
-			<option value="HP">HP</option>
-			<option value="Lenovo">Lenovo</option>
-			<option value="Samsung">Samsung</option>
-			<option value="Sony">Sony</option>
-			<option value="Other">Other</option>
-		</select>
-		<input type="text" hidden="true" name="other" id="other">
+		<fieldset>
+			<legend>Laptop Information</legend>
+			<label for="laptopBrands">Brand:</label>
+			<select size="1" name="laptopBrands" id="laptopBrands">
+				<option value="Acer">Acer</option>
+				<option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="Dell">Dell</option>
+				<option value="HP">HP</option>
+				<option value="Lenovo">Lenovo</option>
+				<option value="Samsung">Samsung</option>
+				<option value="Sony">Sony</option>
+				<option value="Other">Other</option>
+			</select>
+			<input type="text" name="other" id="other" class="hidden" placeholder="Enter your brand">
+		</fieldset>
 		<script src="js/other.js" type="text/javascript" charset="UTF-8"></script>
 	</body>
 </html>
-
-
