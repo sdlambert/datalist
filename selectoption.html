@@ -7,9 +7,34 @@
 			.hidden {
 				display: none;
 			}
+			fieldset, nav {
+				margin: 0 auto;
+				width: 300px;
+			}
+			nav {
+				padding: 10px 0;
+			}
+			fieldset > p {
+				margin: 10px 0;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				display: block;
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+			}
 		</style>
 	</head>
 	<body>
+		<nav>
+			<ul>
+				<li><strong>Select + Option</strong></li> |
+				<li><a href="datalist.html">Datalist</a></li>
+			</ul>
+		</nav>
 		<fieldset>
 			<legend>Laptop Information</legend>
 			<label for="laptopBrands">Brand:</label>
@@ -24,7 +49,8 @@
 				<option value="Sony">Sony</option>
 				<option value="Other">Other</option>
 			</select>
-			<input type="text" name="other" id="other" class="hidden" placeholder="Enter your brand">
+			<input type="text" name="other" id="other" class="hidden" placeholder="Enter your brand"><br>
+			<p><em>The user is prompted to select one of the suggested values. If the user selects the "Other" category, the hidden text input should appear, which requires a bit of javascript to make it work. In addition, we now have to grab data from one of two inputs.</em></p>
 		</fieldset>
 		<script src="js/other.js" type="text/javascript" charset="UTF-8"></script>
 	</body>

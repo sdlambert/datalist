@@ -3,21 +3,51 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Select Options</title>
+		<style type="text/css">
+			fieldset, nav {
+				margin: 0 auto;
+				width: 300px;
+			}
+			nav {
+				padding: 10px 0;
+			}
+			fieldset > p {
+				margin: 10px 0;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				display: block;
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+			}
 		</style>
 	</head>
 	<body>
-		<label for="laptopBrands">Laptop brand:</label><br>
-		<input type="text" name="laptopBrands" id="laptopBrands" placeholder="Enter your brand" list="brandList">
-		<datalist id="brandList">
-			<option value="Acer">Acer</option>
-			<option value="Apple">Apple</option>
-			<option value="Asus">Asus</option>
-			<option value="Dell">Dell</option>
-			<option value="HP">HP</option>
-			<option value="Lenovo">Lenovo</option>
-			<option value="Samsung">Samsung</option>
-			<option value="Sony">Sony</option>
-		</datalist>
+		<nav>
+			<ul>
+				<li><a href="selectoption.html">Select + Option</a></li> |
+				<li><strong>Datalist</strong></li>
+			</ul>
+		</nav>
+		<fieldset>
+			<legend>Laptop Information</legend>
+			<label for="laptopBrands">Laptop brand:</label><br>
+			<input type="text" name="laptopBrands" id="laptopBrands" placeholder="Enter your brand" list="brandList">
+			<datalist id="brandList">
+				<option value="Acer">Acer</option>
+				<option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="Dell">Dell</option>
+				<option value="HP">HP</option>
+				<option value="Lenovo">Lenovo</option>
+				<option value="Samsung">Samsung</option>
+				<option value="Sony">Sony</option>
+			</datalist>
+			<p><em>The datalist element allows the learner to select from one of the suggested values or enter their own, no javascript necessary. Retreiving the values is much easier since we have isolated the input in a single element.</em></p>
+		</fieldset>
 		<script src="js/other.js" type="text/javascript" charset="UTF-8"></script>
 	</body>
 </html>
