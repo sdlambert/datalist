@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Select Options</title>
+		<style type="text/css">
+			.hidden {
+				display: none;
+			}
+			fieldset, nav {
+				margin: 0 auto;
+				width: 300px;
+			}
+			nav {
+				padding: 10px 0;
+			}
+			fieldset > p {
+				margin: 10px 0;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				display: block;
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>2015 Top Baby Names by Gender</legend>
+			<div id="genders">
+				<input type="radio" name="gender" id="male" value="male" checked>
+				<label for="male">Male</label>
+				<br>
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">Female</label>
+				<br>
+			</div>
+			<label for="nameSearch">Search Names: </label>
+			<input type="text" name="nameSearch" id="nameSearch" list="maleNames">
+		</fieldset>
+
+		<datalist id="maleNames">
+			<option value="Liam">Liam</option>
+			<option value="Noah">Noah</option>
+			<option value="Ethan">Ethan</option>
+			<option value="Mason">Mason</option>
+			<option value="Lucas">Lucas</option>
+			<option value="Logan">Logan</option>
+			<option value="Oliver">Oliver</option>
+			<option value="Jackson">Jackson</option>
+			<option value="Aiden">Aiden</option>
+			<option value="Jacob">Jacob</option>
+			<option value="Elijah">Elijah</option>
+			<option value="James">James</option>
+			<option value="Benjamin">Benjamin</option>
+			<option value="Alexander">Alexander</option>
+			<option value="Jack">Jack</option>
+			<option value="Luke">Luke</option>
+			<option value="Carter">Carter</option>
+			<option value="William">William</option>
+			<option value="Michael">Michael</option>
+			<option value="Daniel">Daniel</option>
+		</datalist>
+
+		<datalist id="femaleNames">
+			<option value="Emma">Emma</option>
+			<option value="Olivia">Olivia</option>
+			<option value="Sophia">Sophia</option>
+			<option value="Ava">Ava</option>
+			<option value="Mia">Mia</option>
+			<option value="Isabella">Isabella</option>
+			<option value="Charlotte">Charlotte</option>
+			<option value="Amelia">Amelia</option>
+			<option value="Harper">Harper</option>
+			<option value="Emily">Emily</option>
+			<option value="Madison">Madison</option>
+			<option value="Abigail">Abigail</option>
+			<option value="Avery">Avery</option>
+			<option value="Ella">Ella</option>
+			<option value="Lily">Lily</option>
+			<option value="Sofia">Sofia</option>
+			<option value="Chloe">Chloe</option>
+			<option value="Evelyn">Evelyn</option>
+			<option value="Aria">Aria</option>
+			<option value="Aubrey">Aubrey</option>
+		</datalist>
+
+		<script src="js/gender.js" type="text/javascript" charset="UTF-8"></script>
+	</body>
+</html>
